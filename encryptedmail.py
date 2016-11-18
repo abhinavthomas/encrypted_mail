@@ -30,6 +30,9 @@ def decrypt(key,iv,enmsg):
 	print msg
 
 def fileen():
+	"""
+		Function to enctrypt message and store it into file
+	"""
 	length=0
 	while length<16:
 		keyi = getpass.getpass(prompt='Enter the key: ',stream=None)
@@ -79,6 +82,9 @@ def send():
 	server.quit()
 
 def filede(loc):
+	"""
+		Function to decrypt message in a file given in the given location
+	"""
 	length=0
 	while length<16:
 			keyi = getpass.getpass(prompt='Enter the key: ',stream=None)
